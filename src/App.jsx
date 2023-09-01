@@ -6,10 +6,10 @@ import AddTask from './components/AddTask'
 const App = () => {
   const [showAddTask, setShowAddTask] = useState(false)
   const [tasks, setTasks] = useState([])
-
+// unable to fetch daata from server for now
   useEffect(() =>{
     const getTasks = async () => {
-      const tasksFromServer = await fetchTasks()
+      const tasksFromServer = await fetchTasks()  
       setTasks(tasksFromServer)
     }
     
